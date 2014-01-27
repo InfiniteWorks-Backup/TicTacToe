@@ -2,17 +2,17 @@
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
-              android:layout_width="fill_parent"
-              android:layout_height="fill_parent"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
               android:gravity="center_vertical">
     <Button android:id="@+id/bNew"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:padding="5px"
-            android:text="@string/btn_newgame" />
+            android:padding="15dp"
+            android:text="@string/start_game" />
     <Button android:id="@+id/bExit"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:padding="5px"
-            android:text="@string/btn_exit" />
+            android:padding="15dp"
+            android:text="@string/exit_game" />
 </LinearLayout>
