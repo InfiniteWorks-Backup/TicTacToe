@@ -8,8 +8,9 @@ public class TicTacToeMain extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
+        //Layout that appears after running the app
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_tic_tac_toe_main);
+		setContentView(R.layout.game_menu);
 	}
 
 	@Override
