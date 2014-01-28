@@ -13,7 +13,8 @@ public class TicTacToeMain extends Activity {
         //Layout that appears after running the app
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.game_menu);
-z
+
+        //Exit button event to exit from app
         Button btnExit = (Button) findViewById(R.id.bExit);
         btnExit.setOnClickListener(new View.OnClickListener() {
             @Override
