@@ -3,6 +3,8 @@ package com.infiniteworks.tictactoe;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
+import android.view.View;
+import android.widget.Button;
 
 public class TicTacToeMain extends Activity {
 
@@ -11,6 +13,15 @@ public class TicTacToeMain extends Activity {
         //Layout that appears after running the app
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.game_menu);
+z
+        Button btnExit = (Button) findViewById(R.id.bExit);
+        btnExit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+                System.exit(0);
+            }
+        });
 	}
 
 	@Override
