@@ -16,7 +16,7 @@ public class game_window extends Activity {
 
         // Get message from intent
         Intent intent = getIntent();
-        String message = intent.getStringExtra(TicTacToeMain.EXTRA_MSG);
+        String message = intent.getStringExtra(TicTacToeMain.Test_MSG);
         // Create text view
         TextView textView = new TextView(this);
         textView.setTextSize(40);

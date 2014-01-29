@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class TicTacToeMain extends Activity {
 
-    public final static String EXTRA_MSG = "com.infiniteworks.tictactoe.EXTRA_MESG";
+    public final static String Test_MSG = "com.infiniteworks.tictactoe.Test_MSG";
 
     @Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +39,7 @@ public class TicTacToeMain extends Activity {
         //Going to assign a message
         Intent intent = new Intent(this, game_window.class);
         String message = "TicTacToeGameWindow_Test";
-        intent.putExtra(EXTRA_MSG, message);
+        intent.putExtra(Test_MSG, message);
         startActivity(intent);
     }
 }
