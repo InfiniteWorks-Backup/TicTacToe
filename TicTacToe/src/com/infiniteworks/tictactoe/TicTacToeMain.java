@@ -1,5 +1,6 @@
 package com.infiniteworks.tictactoe;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
@@ -8,7 +9,9 @@ import android.widget.Button;
 
 public class TicTacToeMain extends Activity {
 
-	@Override
+    public final static String EXTRA_MSG = "com.infiniteworks.tictactoe.EXTRA_MESG";
+
+    @Override
 	protected void onCreate(Bundle savedInstanceState) {
         //Layout that appears after running the app
 		super.onCreate(savedInstanceState);
@@ -31,5 +34,12 @@ public class TicTacToeMain extends Activity {
 		getMenuInflater().inflate(R.menu.tic_tac_toe_main, menu);
 		return true;
 	}
-
+    // Called when the user clicks the Send button
+    public void sendMessage(View view) {
+        //Going to assign a message
+        Intent intent = new Intent(this, game_window.class);
+        String message = "TicTacToeGameWindow_Test";
+        intent.putExtra(EXTRA_MSG, message);
+        startActivity(intent);
+    }
 }

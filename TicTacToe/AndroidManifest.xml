@@ -22,6 +22,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+                android:name="com.infiniteworks.tictactoe.game_window"
+                android:label="@string/game_display_title"
+                android:parentActivityName="com.infiniteworks.tictactoe.TicTacToeMain" >
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.infiniteworks.tictactoe.TicTacToeMain" />
+        </activity>
+
+
     </application>
 
 </manifest>
