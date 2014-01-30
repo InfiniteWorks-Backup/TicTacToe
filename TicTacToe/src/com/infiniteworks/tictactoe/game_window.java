@@ -14,15 +14,15 @@ public class game_window extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.game_window);
 
-        // Get message from intent
-        Intent intent = getIntent();
-        String message = intent.getStringExtra(TicTacToeMain.Test_MSG);
-        // Create text view
-        TextView textView = new TextView(this);
-        textView.setTextSize(40);
-        textView.setText(message);
-        // Set the text view as the activity layout
-        setContentView(textView);
+//        // Get message from intent
+//        Intent intent = getIntent();
+//        String message = intent.getStringExtra(TicTacToeMain.Test_MSG);
+//        // Create text view
+//        TextView textView = new TextView(this);
+//        textView.setTextSize(40);
+//        textView.setText(message);
+//        // Set the text view as the activity layout
+//        setContentView(textView);
 
     }
 
