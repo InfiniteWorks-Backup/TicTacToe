@@ -15,8 +15,9 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_weight="1"
+            android:tag="playerTurnLabel"
             android:gravity="center"
-            android:text="Large Text"
+            android:text="Player __&apos;s Turn"
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
     </RelativeLayout>
